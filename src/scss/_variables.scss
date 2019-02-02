@@ -1,0 +1,49 @@
+// typography
+$font-family-primary: "Raleway", sans-serif;
+$navbar-brand-font-size: 20px;
+$navbar-navigation-link-font-size: 18px;
+
+// colors
+$navbar-bg-color: #191919;
+$navbar-brand-color: white;
+$navbar-navigation-link-color: #c4c4c4;
+$navbar-navigation-link-color-hover: white;
+
+//layouts
+$navbar-height-sm-only: 100px;
+$navbar-height-md-only: 80px;
+$navbar-height-min-lg: 120px;
+$navbar-navigation-height: 280px;
+$navbar-btn-toggle-width: 30px;
+
+// brekpoints (Bootstrap)
+$break-screen-sm: 576px;
+$break-screen-md: 768px;
+$break-screen-lg: 992px;
+$break-screen-xl: 1200px;
+
+// mixins
+// media queries
+@mixin media-max-sm {
+  @media (max-width: #{$break-screen-sm}) {
+    @content;
+  }
+}
+
+@mixin media-md-only {
+  @media (min-width: #{$break-screen-sm}) and (max-width: #{$break-screen-lg}) {
+    @content;
+  }
+}
+
+@mixin media-max-lg {
+  @media (max-width: #{$break-screen-lg}) {
+    @content;
+  }
+}
+
+@mixin media-min-lg {
+  @media (min-width: #{$break-screen-lg}) {
+    @content;
+  }
+}

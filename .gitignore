@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+node_modules/
+src/css
+my-app*
+npm-debug.log*
+.npm/
