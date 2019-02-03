@@ -81,23 +81,7 @@
     <!-- end of div.app__navbar -->
 
     <!-- Optional JavaScript -->
-    <script>
-      const sidenav = document.getElementById("sidenav");
-      function closeSidenav() {
-        sidenav.classList.remove("open");
-        sidenav.classList.add("closed");
-        setTimeout(function() {
-          sidenav.classList.remove("closed");
-        }, 500);
-      }
-      function toggleSidenav() {
-        if (sidenav.classList.contains("open")) {
-          closeSidenav();
-        } else if (!sidenav.classList.contains("open")) {
-          sidenav.classList.add("open");
-        }
-      }
-    </script>
+    <script src="./scripts/navbar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
