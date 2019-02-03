@@ -93,17 +93,22 @@
       top: $navbar-height-sm-only;
       left: 0;
       width: 0;
-      background-color: gray;
+      height: $navbar-navigation-height;
+      background-color: $navbar-bg-color;
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-evenly;
       align-items: center;
-      height: $navbar-navigation-height;
       overflow-x: hidden;
-      transition: 0.5s;
       &.open {
         width: 100vw;
-        padding: 0 15px;
+        transition-property: width;
+        transition-duration: 0.5s;
+      }
+      &.closed {
+        width: 0;
+        transition-property: width;
+        transition-duration: 0.5s;
       }
     }
     @include media-md-only {
@@ -118,6 +123,7 @@
     }
     &__icon--close {
       color: $navbar-navigation-link-color;
+      font-size: $navbar-navigation-link-font-size;
       cursor: pointer;
       &:hover {
         color: $navbar-navigation-link-color-hover;
@@ -127,6 +133,7 @@
       }
       @include media-max-lg {
         align-self: flex-end;
+        padding: 0 25px;
       }
     }
     &__link {
