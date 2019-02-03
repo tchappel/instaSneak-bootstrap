@@ -1,21 +1,33 @@
 .app__navbar {
+  position: fixed;
+  top: 0;
   width: 100vw;
+  z-index: 1000;
   background-color: $navbar-bg-color;
   font-family: $font-family-primary;
+  @include media-max-sm {
+    height: $navbar-height-sm-only;
+  }
+  @include media-md-only {
+    height: $navbar-height-md-only;
+  }
+  @include media-min-lg {
+    height: $navbar-height-min-lg;
+  }
 
   &__container {
+    height: 100%;
     @include media-min-lg {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      height: $navbar-height-min-lg;
     }
   }
 
   &__container--brand-form-toggle {
     @include media-max-sm {
-      height: $navbar-height-sm-only;
+      height: 100%;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -23,7 +35,7 @@
       align-content: space-around;
     }
     @include media-md-only {
-      height: $navbar-height-md-only;
+      height: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
