@@ -32,7 +32,7 @@
 
     @include media-min-lg {
       height: $navbar-height-min-lg;
-      width: 50%;
+      width: 45%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
@@ -52,7 +52,7 @@
       text-align: center;
     }
     @include media-min-lg {
-      width: 250px;
+      width: 230px;
       text-align: center;
     }
   }
@@ -67,6 +67,7 @@
       flex-grow: 1;
     }
     &__searchbar {
+      max-width: 320px;
       @include media-max-sm {
         width: calc(100% - #{(3 * $navbar-btn-toggle-width)});
         margin: 0 auto;
@@ -115,7 +116,7 @@
       top: $navbar-height-md-only;
     }
     @include media-min-lg {
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
