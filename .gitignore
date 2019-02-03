@@ -1,7 +1,7 @@
 .idea/
 .vscode/
 node_modules/
-src/css
+src/css/style.css
 my-app*
 npm-debug.log*
 .npm/
