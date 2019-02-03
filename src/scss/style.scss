@@ -8,6 +8,9 @@ $sm: 576px;
 $white: #fff;
 $black: #000;
 $primary: #28cc9e;
+
+.template {
+}
 html {
   overflow-x: hidden;
 }
@@ -32,91 +35,7 @@ h5 {
   font-weight: normal;
   color: $black;
 }
-.section-text {
-  h2 {
-  }
-}
 
-.probootstrap-nav {
-  padding: 20px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
-
-  .site-brand {
-    font-size: 20px;
-    a {
-      color: $white;
-    }
-  }
-  .probootstrap-toggle {
-    color: $white !important;
-    position: absolute;
-    z-index: 10;
-    right: 20px;
-    top: 20px;
-  }
-  .probootstrap-main-nav {
-    transition: 0.3s all ease;
-    ul {
-      padding: 0;
-      margin: 0;
-      li {
-        display: inline;
-        list-style: none;
-        a {
-          padding: 10px;
-          color: rgba(255, 255, 255, 0.5);
-        }
-        &.seperator {
-          position: relative;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 2px;
-            background: rgba(255, 255, 255, 0.1);
-          }
-        }
-      }
-    }
-    @media screen and (max-width: $md) {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      height: 100vh;
-      background: rgba(0, 0, 0, 1);
-      width: 300px;
-      right: 0;
-      top: 0;
-      padding-top: 50px;
-      transform: translateX(100%);
-
-      z-index: 1;
-      &.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(0%);
-      }
-      ul {
-        li {
-          display: block;
-          padding: 10px;
-          a {
-            &:hover {
-              color: $white;
-            }
-          }
-        }
-      }
-    }
-  }
-}
 .bg-image {
   background-size: cover;
   background-repeat: no-repeat;
