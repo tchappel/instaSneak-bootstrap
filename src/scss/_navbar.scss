@@ -149,6 +149,10 @@
       }
     }
 
+    @include media-max-sm {
+      transform: scale(0.8);
+    }
+
     @include media-md-only {
       order: 2;
     }
