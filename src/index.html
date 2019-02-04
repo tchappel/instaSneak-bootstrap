@@ -41,13 +41,14 @@
       <div class="container-fluid app__navbar__container">
         <div class="app__navbar__container--brand-form-toggle">
           <a class="app__navbar__brand" href="#">InstaSneak</a>
-          <button
-            class="app__navbar__btn-toggle"
-            type="button"
+          <div
+            class="menuFive app__navbar__btn-toggle"
             onclick="toggleSidenav()"
           >
-            <i class="fas fa-bars"></i>
-          </button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <form class="app__navbar__form">
             <div class="input-group app__navbar__form__searchbar">
               <input
@@ -66,10 +67,6 @@
           </form>
         </div>
         <nav class="app__navbar__navigation" id="sidenav">
-          <i
-            class="fas fa-times app__navbar__navigation__icon--close"
-            onclick="closeSidenav()"
-          ></i>
           <a class="app__navbar__navigation__link" href="#">
             <i class="fas fa-chart-line"></i> Analisi
           </a>
